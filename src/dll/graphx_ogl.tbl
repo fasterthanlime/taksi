@@ -1,0 +1,33 @@
+//
+// GraphX_OGL.TBL
+//
+// typedefs for OpenGL functions that we use.
+// We cannot link implicitly with opengl32.lib, because we test
+// OpenGL usage in the applications by looking for OpenGL functions.
+// (Linking with opengl32.lib will make every app look like it is
+// using OpenGL).
+//
+
+GRAPHXOGLFUNC( wglSwapBuffers,		BOOL,	( HDC ))
+GRAPHXOGLFUNC( wglGetCurrentDC,		HDC,	( void ))
+GRAPHXOGLFUNC( wglGetProcAddress,	PROC,	( LPCSTR ))
+
+GRAPHXOGLFUNC( glBegin,				void,	(GLenum mode))	
+GRAPHXOGLFUNC( glDisable,			void,	(GLenum cap))
+GRAPHXOGLFUNC( glColor3f,			void,	(GLfloat red, GLfloat green, GLfloat blue))
+GRAPHXOGLFUNC( glEnable,			void,	(GLenum cap))
+GRAPHXOGLFUNC( glEnd,				void,	(void))
+GRAPHXOGLFUNC( glGetIntegerv,		void,	(GLenum pname, GLint *params))	
+GRAPHXOGLFUNC( glGetString,			const GLubyte*, (GLenum name))
+GRAPHXOGLFUNC( glLoadIdentity,		void,	(void))
+GRAPHXOGLFUNC( glMatrixMode,		void,	(GLenum mode))
+GRAPHXOGLFUNC( glOrtho,				void,	(GLdouble left, GLdouble right, GLdouble bottom, GLdouble top, GLdouble zNear, GLdouble zFar))
+GRAPHXOGLFUNC( glPopAttrib,			void,	(void))
+GRAPHXOGLFUNC( glPopMatrix,			void,	(void))
+GRAPHXOGLFUNC( glPushAttrib,		void,	(GLbitfield mask))
+GRAPHXOGLFUNC( glPushMatrix,		void,	(void))
+GRAPHXOGLFUNC( glReadBuffer,		void,	(GLenum mode))
+GRAPHXOGLFUNC( glReadPixels,		void,	(GLint x, GLint y, GLsizei width, GLsizei height, GLenum format, GLenum type, GLvoid *pixels))
+GRAPHXOGLFUNC( glShadeModel,		void,	(GLenum mode))
+GRAPHXOGLFUNC( glVertex2i,			void,	(GLint x, GLint y))
+GRAPHXOGLFUNC( glViewport,			void,	(GLint x, GLint y, GLsizei width, GLsizei height))

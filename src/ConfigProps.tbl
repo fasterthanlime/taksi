@@ -1,0 +1,36 @@
+//
+// ConfigProps.tbl
+// for CTaksiConfig
+
+ConfigProp(AudioCodecInfo,			m_AudioCodec,	"Audio format / codec")
+ConfigProp(AudioDevice,				m_iAudioDevice,	"Use audio device for AVI or not")
+
+ConfigProp(CaptureDir,				m_szCaptureDir,	"Capture directory (NOTE: must end with a backslash)")
+ConfigProp(DebugLog,				m_bDebugLog,	"Debug Log kept?")
+ConfigProp(FileNamePostfix,			m_szFileNamePostfix, "Postfix the saved file name with this")
+
+ConfigProp(GDIFrame,				m_bGDIFrame,	"Record the GDI frame or just the client area")
+ConfigProp(GDIUse,					m_bGDIUse,		"hook GDI mode at all?")
+
+ConfigProp(KeyboardUseDirectInput,	m_bUseDirectInput,	"use DirectInput for hotkeys else use hooks")
+ConfigProp(MovieFrameRateTarget,	m_fFrameRateTarget,	"desired frame rate of captured video (f/sec)")
+
+ConfigProp(OpenGLUse,				m_bOpenGLUse,		"Use openGL hooking or not")
+ConfigProp(PosMasterWindow,			m_ptMasterWindow,	"Position of the master window" )
+
+ConfigProp(ShowIndicator,			m_bShowIndicator,	"Show the indicator on the window")
+ConfigProp(VideoCodecInfo,			m_VideoCodec,		"Video Codec Info stored as an array of bytes.")
+ConfigProp(VideoCodecMsg,			m_bVideoCodecMsg,	"Did we put up the message about video code yet ?")
+ConfigProp(VideoHalfSize,			m_bVideoHalfSize,	"Capture Half vs Full size video")
+
+ConfigProp(VKey_ConfigOpen,			m_wHotKey[0],	"Hot key to open the config dialog")
+ConfigProp(VKey_HookModeToggle,		m_wHotKey[1],	"Hot key mappings HookModeToggle")
+ConfigProp(VKey_IndicatorToggle,	m_wHotKey[2],	"Hot key mappings IndicatorToggle")
+ConfigProp(VKey_RecordBegin,		m_wHotKey[3],	"Hot key mappings RecordBegin")
+ConfigProp(VKey_RecordPause,		m_wHotKey[4],	"Hot key mappings RecordPause")
+ConfigProp(VKey_RecordStop,			m_wHotKey[5],	"Hot key mappings RecordStop")
+ConfigProp(VKey_Screenshot,			m_wHotKey[6],	"Hot key mappings Screenshot")
+ConfigProp(VKey_SmallScreenshot,	m_wHotKey[7],	"Hot key mappings SmallScreenshot")
+
+ConfigProp(UseOverheadCompensation, m_bUseOverheadCompensation, "Compensate for record overhead in frame rate calc")
+

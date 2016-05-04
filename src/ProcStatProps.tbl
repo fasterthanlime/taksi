@@ -1,0 +1,12 @@
+//
+// ProcStatProps.tbl
+//
+ProcStatProp(ProcessId,			m_dwProcessId,		0,	"Process id")
+ProcStatProp(ProcessFile,		m_szProcessFile,	0,	"szProcessFile")
+ProcStatProp(LastError,			m_szLastError,		0,	"szLastError")
+ProcStatProp(Wnd,				m_hWnd,				0,	"hWnd")
+ProcStatProp(SizeWnd,			m_SizeWnd,			0,	"SizeWnd")
+ProcStatProp(GraphXMode,		m_eGraphXMode,		0,	"What graphics mode is hooked")
+ProcStatProp(State,				m_eState,			0,	"eState, ready, recording, paused")
+ProcStatProp(FrameRate,			m_fFrameRate,		0,	"fFrameRate")
+ProcStatProp(DataRecorded,		m_dwDataRecorded,	0,	"dwDataRecorded")

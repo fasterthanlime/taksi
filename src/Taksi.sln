@@ -1,0 +1,47 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TaksiInstaller", "TaksiInstaller\TaksiInstaller.vdproj", "{D9A51286-FCCB-4969-927D-B725A1FDE0DE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaksiDll", "dll\TaksiDll.vcproj", "{A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TaksiExe", "exe\Taksi.vcproj", "{820F2560-D0E6-4A3B-86FA-2DD5107256BC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2} = {A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{D9A51286-FCCB-4969-927D-B725A1FDE0DE}.Debug.ActiveCfg = Debug
+		{D9A51286-FCCB-4969-927D-B725A1FDE0DE}.Release.ActiveCfg = Release
+		{D9A51286-FCCB-4969-927D-B725A1FDE0DE}.Release.Build.0 = Release
+		{A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2}.Debug.ActiveCfg = Debug|Win32
+		{A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2}.Debug.Build.0 = Debug|Win32
+		{A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2}.Release.ActiveCfg = Release|Win32
+		{A6933EDB-048F-4D59-A0D8-E6DD23F9EAB2}.Release.Build.0 = Release|Win32
+		{820F2560-D0E6-4A3B-86FA-2DD5107256BC}.Debug.ActiveCfg = Debug|Win32
+		{820F2560-D0E6-4A3B-86FA-2DD5107256BC}.Debug.Build.0 = Debug|Win32
+		{820F2560-D0E6-4A3B-86FA-2DD5107256BC}.Release.ActiveCfg = Release|Win32
+		{820F2560-D0E6-4A3B-86FA-2DD5107256BC}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		..\BUILD.txt = ..\BUILD.txt
+		..\doc\history.txt = ..\doc\history.txt
+		..\license.txt = ..\license.txt
+		Makefile = Makefile
+		..\doc\manual.txt = ..\doc\manual.txt
+		taksi.ini = taksi.ini
+		..\doc\TaksiPic.jpg = ..\doc\TaksiPic.jpg
+		..\doc\TaksiTasks.txt = ..\doc\TaksiTasks.txt
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
